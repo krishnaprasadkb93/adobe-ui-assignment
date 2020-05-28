@@ -1,0 +1,6 @@
+// calculate rem vaue
+@function rem($size) {
+    $remSize: $size / $body-size;
+    //Default font size on html element is 100%, equivalent to 16px;
+    @return #{$remSize}rem;
+}

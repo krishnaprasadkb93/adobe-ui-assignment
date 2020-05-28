@@ -1,0 +1,24 @@
+@mixin display($display) {
+    display: $display;
+}
+@mixin f-align-center {
+    align-items: center;
+}
+@mixin f-align-start {
+    align-items: flex-start;
+}
+@mixin f-align-end {
+    align-items: flex-end;
+}
+@mixin f-content-center {
+    justify-content: center;
+}
+@mixin f-content-start {
+    justify-content: flex-start;
+}
+@mixin f-content-end {
+    justify-content: flex-end;
+}
+@mixin f-content-between {
+    justify-content: space-between;
+}

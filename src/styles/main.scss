@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+// utility
+// import mixins,functions and variables
+@import "utility/variables";
+@import "utility/functions";
+@import "utility/mixins";
+
+// vendors
+// import vender styles like bootstrap,bulma
+// @import 'vendors/bulma';
+
+// base
+// import basic styles like typography,normalise css, reset css
+@import "base/reset";
+@import "base/typography";
+
+// layout
+// import header,footer,common layouts
+@import "layout/layout";
+@import "layout/common";
+@import "layout/header";
+@import "layout/carousel";
+@import "layout/footer";

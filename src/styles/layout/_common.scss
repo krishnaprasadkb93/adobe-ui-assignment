@@ -1,0 +1,25 @@
+// helpers
+.d-flex {
+    @include display("flex");
+}
+.f-align-center {
+    @include f-align-center();
+}
+.f-align-start {
+    @include f-align-start();
+}
+.f-align-end {
+    @include f-align-end();
+}
+.f-content-center {
+    @include f-content-center();
+}
+.f-content-start {
+    @include f-content-start();
+}
+.f-content-end {
+    @include f-content-end();
+}
+.f-content-between {
+    @include f-content-between();
+}

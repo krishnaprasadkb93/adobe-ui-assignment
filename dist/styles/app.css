@@ -1,0 +1,297 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.1 | 20191019
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.875rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1.125rem;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: "flex";
+}
+
+.f-align-center {
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.f-align-start {
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+
+.f-align-end {
+  -ms-flex-align: end;
+      align-items: flex-end;
+}
+
+.f-content-center {
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.f-content-start {
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+
+.f-content-end {
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+.f-content-between {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.site-header {
+  width: 100%;
+  height: 4.375rem;
+  background-color: #212121;
+  color: #fff;
+  font-weight: bold;
+}
+
+.site-header > .container {
+  height: 100%;
+}
+
+.site-header .site-log {
+  display: "flex";
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel .carousel__slides {
+  display: none;
+}
+
+.carousel .carousel__slides img {
+  vertical-align: middle;
+  width: 100%;
+  object-fit: cover;
+  max-height: 43.125rem;
+}
+
+@media (max-width: 767px) {
+  .carousel .carousel__slides img {
+    height: 25rem;
+  }
+}
+
+.carousel .carousel__container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.carousel .carousel__dots {
+  position: absolute;
+  bottom: 0.3125rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 1.25rem;
+}
+
+.carousel .carousel__prev,
+.carousel .carousel__next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1rem;
+  margin-top: -1.375rem;
+  color: white;
+  font-weight: bold;
+  font-size: 2.1875rem;
+  transition: 0.6s ease;
+  border-radius: 0 0.1875rem 0.1875rem 0;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.carousel .carousel__prev:hover,
+.carousel .carousel__next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel .carousel__next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.carousel .carousel__next::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f054";
+}
+
+.carousel .carousel__prev::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f053";
+}
+
+.carousel .carousel__content {
+  color: #f2f2f2;
+  padding: 0.5rem 0.75rem;
+  max-width: 31.25rem;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: 100%;
+  display: "flex";
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+.carousel .carousel__content__title {
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.875rem;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .carousel .carousel__content__title {
+    font-size: 1.75rem;
+  }
+}
+
+.carousel .carousel__dot {
+  cursor: pointer;
+  height: 0.9375rem;
+  width: 0.9375rem;
+  margin: 0 0.3125rem;
+  background-color: transparent;
+  border: 0.0625rem solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.carousel .carousel__dot.active, .carousel .carousel__dot:hover {
+  background-color: #fff;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.site-footer {
+  height: 15.625rem;
+  background-color: #212121;
+}

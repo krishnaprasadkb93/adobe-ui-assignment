@@ -1,0 +1,14 @@
+.site-header {
+    width: 100%;
+    height: rem(70px);
+    background-color: $header-color;
+    color: $white;
+    font-weight: bold;
+    > .container {
+        height: 100%;
+    }
+    .site-log {
+        @include display("flex");
+        @include f-align-center();
+    }
+}

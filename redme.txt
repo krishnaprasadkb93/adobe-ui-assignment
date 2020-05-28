@@ -1,0 +1,5 @@
+carousal
+
+STEP : 1  npm install
+STEP : 2  Gulp  (for run the project)
+STEP : 3 Gulp build (build the project)
