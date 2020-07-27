@@ -1,4 +1,4 @@
-carousal
+project Name
 
 STEP : 1  npm install
 STEP : 2  Gulp  (for run the project)

@@ -22,3 +22,31 @@
 @mixin f-content-between {
     justify-content: space-between;
 }
+//mixin for media queries
+@mixin mq($size) {
+    @if $size == phone {
+        @media (max-width: 599px) {
+            @content;
+        }
+    } @else if $size == tablet-portrait-up {
+        @media (min-width: 600px) {
+            @content;
+        }
+    } @else if $size == tablet-landscape-up {
+        @media (min-width: 900px) {
+            @content;
+        }
+    } @else if $size == desktop-up {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    } @else if $size == big-desktop-up {
+        @media (min-width: 1800px) {
+            @content;
+        }
+    }
+}
+// use media query mixin
+@include mq(phone) {
+    font-size: 1rem;
+}

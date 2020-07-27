@@ -1,14 +1,14 @@
 {
-    "name": "carousal",
+    "name": "Project Name",
     "version": "1.0.0",
-    "description": "carousal",
+    "description": "Project Name",
     "main": "gulpfile.js",
     "scripts": {
         "start": "gulp",
         "watch": "cross-env NODE_ENV=development gulp watch",
         "build": "cross-env NODE_ENV=production gulp build"
     },
-    "author": "carousal",
+    "author": "Krishnaprasad",
     "license": "MIT",
     "homepage": "",
     "devDependencies": {
@@ -32,7 +32,6 @@
     "dependencies": {
         "@babel/core": "^7.10.1",
         "@babel/preset-env": "^7.10.1",
-        "bulma-scss": "^0.8.0",
         "gulp-babel": "^8.0.0",
         "gulp-install": "^1.1.0",
         "gulp-sourcemaps": "^2.6.5",
